@@ -7,6 +7,7 @@ This is a modified version of the corne keyboard by foostan. It is wireless and 
 - support for rotary encoder on each half
 - support for nice!view oled (untested)
 - power button and JST header to plug 3.7v lipo battery
+
 *You can place either an oled or an encoder due to limited space*
 
 ## rev1 

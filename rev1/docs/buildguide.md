@@ -7,16 +7,22 @@
 | Seeed Studio XIAO nRF52840 | 02 | https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html |
 | Hotswap socket             | 42 | Hotswap sockets for MX-style |
 | Diodes 1N4148W             | 44 | Surface mount diodes in SOD123 package |
-| EC11 encoder/OLED          | 02 | You can use any EC11 encoder. For oled [Nice!view](https://nicekeyboards.com/nice-view) is recommended |
+| EC11 encoder               | 02 | 20 step, 20 detent Bourns encoder are recommended. You can read more about it here [(Quadrature) Encoders](https://kbd.news/Designing-for-Wireless-1784.html)|
+| OLED                       | 02 | [Nice!view](https://nicekeyboards.com/nice-view) is recommended |
 | MCU sockets                | 04 | For socketing your MCU |
-| MCU pins and/or diodes     |    | For the pins and the pads at the back, I used diode legs. More on this later. |
+| MCU pins and/or diodes     |    | For the pins and the pads at the back, I used diode legs. More on this later |
 | Power Button               | 02 | MSK12C02 SMD Toggle Slide Switch |
 | Battery Connector          | 02 | S2B-PH-K-S |
 
-Note: You can also solder the battery directly where the connector goes. If opting for the connector, you'll need to use longer spacers to accomodate them below the pcb. 
+> Note: 
+> - You can also solder the battery directly where the connector goes. If opting for the connector, you'll need to use longer spacers to accomodate them below the pcb.
+> - Only an encoder or an oled can be used due to limited space.
+> - You can solder the power switch on either side of the pcb.
+
+***
 
 > **Warning**
-> This guide assumes you are capable of soldering the diodes, hotswap sockets, power button, encoder and mcu sockets yourself.** You can find videos/guides about these stuff very easily. I have only shared some of the extra things you need to take care of.
+> This guide assumes you are capable of soldering the diodes, hotswap sockets, power button, encoder and mcu sockets yourself. You can find videos/guides about these stuff very easily. I have only shared some of the extra things you need to take care of.
 
 ***
 
