@@ -1,0 +1,19 @@
+#include "corny.dtsi"
+
+&default_transform {
+    col-offset = <5>;
+};
+
+&kscan0 {
+    col-gpios
+        = <&xiao_d 6 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 7 GPIO_ACTIVE_HIGH> 
+        , <&xiao_d 8 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 10 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 3 GPIO_ACTIVE_HIGH>
+        ;
+};
+
+&right_encoder {
+    status = "okay";
+};

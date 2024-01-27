@@ -10,8 +10,19 @@ This is a modified version of the corne keyboard by foostan. It is wireless and 
 
 *You can place either an oled or an encoder due to limited space*
 
-## rev1 
+***
+
+### rev1 
 Non reversible pcb. 
 
-## rev2
-wip (reversible pcb)
+### rev2
+Reversible and breakable(5 column) pcb.
+
+***
+
+### Refrences
+Thanks to all these project which have been a huge help to me
+ 
+- foostan's [crkbd](https://github.com/foostan/crkbd) 
+- GEIST's [KLOR](https://github.com/GEIGEIGEIST/KLOR) and [TOTEM](https://github.com/GEIGEIGEIST/TOTEM)
+- Jon Muller's [corne-choc-xiao](https://github.com/JonMuller/gerbers/tree/main/corne-choc-xiao)

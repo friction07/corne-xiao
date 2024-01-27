@@ -14,6 +14,6 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: corny_left rgbled_widget
+    shield: corny_left rgbled_adapter
   - board: seeeduino_xiao_ble
-    shield: corny_right rgbled_widget
+    shield: corny_right rgbled_adapter

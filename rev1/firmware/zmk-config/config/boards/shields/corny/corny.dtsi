@@ -24,7 +24,6 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(3,5) RC(3,6) RC(2,6) RC(2,7) 
 
     kscan0: kscan {
       compatible = "zmk,kscan-gpio-matrix";
-      label = "KSCAN";
 
       diode-direction = "col2row";
       row-gpios
@@ -37,7 +36,6 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(3,5) RC(3,6) RC(2,6) RC(2,7) 
 
     left_encoder: encoder_left {
         compatible = "alps,ec11";
-        label = "LEFT_ENCODER";
         a-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&xiao_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <80>;
@@ -46,14 +44,13 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(3,5) RC(3,6) RC(2,6) RC(2,7) 
 
     right_encoder: encoder_right {
         compatible = "alps,ec11";
-        label = "RIGHT_ENCODER";
         a-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&xiao_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <80>;
         status = "disabled";
     };
 
-    sensors {
+    sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <20>;
