@@ -63,7 +63,7 @@ I soldered multiple xiao like this. It looks scary at first but it just needs pa
 
 |     Backside of the left half     | Bridge the two jumpers for battery connector | Bridge the 10 jumpers for controller(xiao-ble) | Final look after soldering the battery connector and mcu sockets |
 | :-------------------------------: | :------------------------------------------: | :--------------------------------------------: | :--------------------------------------------------------------: |
-| ![](rev2/docs/images/Jumper1.jpg) |       ![](rev2/docs/images/Jumper2.jpg)      |       ![](rev2/docs/images/Jumper3.jpg)        |              ![](rev2/docs/images/Jumper4.jpg)                   |
+| ![](/rev2/docs/images/Jumper1.jpg) |       ![](/rev2/docs/images/Jumper2.jpg)      |       ![](/rev2/docs/images/Jumper3.jpg)        |              ![](/rev2/docs/images/Jumper4.jpg)                   |
 
 ### Solder the controller
 
