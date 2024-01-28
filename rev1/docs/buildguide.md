@@ -30,6 +30,7 @@ Note:
 #### Pads at the back
 
 We have to solder 3 diode legs to the 3 pads at the back of the xiao. The pads being *BAT+* and the two *NFC* pads at the corner. The other battery pad is ignored as it is internally connected to *GND* pin.
+**_You can skip soldering one of the NFC pads if you are not going to use nice!views. Check the "CS" label on the pcb to know which._**
 
 - **Tin the pads**
 
