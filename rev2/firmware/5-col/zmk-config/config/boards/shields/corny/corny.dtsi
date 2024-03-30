@@ -22,10 +22,11 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)                RC(2,5) RC(2,6) RC(2,7) R
       >;
     };
 
-    kscan0: kscan {
+    kscan0: kscan_0 {
       compatible = "zmk,kscan-gpio-matrix";
-
       diode-direction = "col2row";
+      wakeup-source;
+
       row-gpios
         = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
