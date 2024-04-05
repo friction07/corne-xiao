@@ -9,38 +9,38 @@
 | Diodes 1N4148W              | 44 | Surface mount diodes in SOD123 package |
 | EC11 encoder                | 02 | 20 steps, 20 detent Bourns encoder are recommended. You can read more about it here [(Quadrature) Encoders](https://kbd.news/Designing-for-Wireless-1784.html)|
 | OLED                        | 02 | [Nice!view](https://nicekeyboards.com/nice-view) is recommended |
-| MCU sockets                 | 04 | For socketing your MCU |
-| MCU pins and/or diodes      |    | For the pins and the pads at the back, I used diode legs. More on this later |
+| MCU sockets                 | 04 | Optional but recommended |
 | Power Button                | 02 | MSK12C02 SMD Toggle Slide Switch |
 | Battery & Battery Connector | 02 | 3.7v lipo battery and S2B-PH-K-S connector |
 
 Note: 
  - Use a battery with a built-in protection circuit.
  - You can always solder the battery directly and skip the connector. If opting for the connector, you'll need to use longer spacers to accommodate them below the pcb.
- - Only an encoder or an oled can be used due to limited space.
  - You can solder the power switch on either side of the pcb.
-
-***
-
-> **Warning**
-> This guide assumes you are capable of soldering the diodes, hotswap sockets, power button, encoder and mcu sockets yourself. You can find videos/guides about these stuff very easily. I have only shared some of the extra things you need to take care of.
+ - **This guide assumes you are capable of soldering the diodes, hotswap sockets, power button, encoder and mcu sockets yourself. You can find videos/guides about these stuff very easily. I have only shared some of the extra things you need to take care of.**
 
 ***
 
 #### Pads at the back
 
 We have to solder 3 diode legs to the 3 pads at the back of the xiao. The pads being *BAT+* and the two *NFC* pads at the corner. The other battery pad is ignored as it is internally connected to *GND* pin.
-**_You can skip soldering one of the NFC pads if you are not going to use nice!views. Check the "CS" label on the pcb to know which._**
+
+> You can skip soldering one of the NFC pads if you are not going to use nice!views. Check the "CS" label on the pcb to know which.
 
 - **Tin the pads**
 
 ![tin the pads](/rev1/docs/images/mcu1.jpg)
 
-- **Solder the diode legs**
+- **Solder the diode legs** 
 
 ![solder the legs](/rev1/docs/images/mcu2.jpg)
 
-> **Warning**
+- You can use wires instead of diode legs. The image below is just an example. Credit goes to [numtostr](https://github.com/numToStr) for the tip.
+
+![use wires instead](/rev1/docs/images/mcu-alt.jpg)
+
+ **Warning**
+
 > Use low temperature for this (I used 260 C). Hold the legs with help of tweezers. Flux will help a lot. Try to make the legs straight which shouldn't be difficult as they are easy to bend. **Do not overheat or use excess force or you may end up lifting the pads**.
 I soldered multiple xiao like this. It looks scary at first but it just needs patience.
 

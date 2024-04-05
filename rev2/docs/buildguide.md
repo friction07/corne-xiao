@@ -9,17 +9,17 @@
 | Diodes 1N4148W              | 44 | Surface mount diodes in SOD123 package |
 | EC11 encoder                | 02 | 20 steps, 20 detent Bourns encoder are recommended. You can read more about it here [(Quadrature) Encoders](https://kbd.news/Designing-for-Wireless-1784.html)|
 | OLED                        | 02 | [Nice!view](https://nicekeyboards.com/nice-view) is recommended |
-| MCU sockets                 | 04 | For socketing your MCU |
-| MCU pins and/or diodes      |    | For the pins and the pads at the back, I used diode legs. More on this later |
+| MCU sockets                 | 04 | Optional but recommended |
 | Power Button                | 02 | MSK12C02 SMD Toggle Slide Switch |
-| Battery & Battery Connector | 02 | 3.7v lipo battery and S2B-PH-K-S |
+| Battery & Battery Connector | 02 | 3.7v lipo battery and S2B-PH-K-S connector |
 
 Note: 
  - Use a battery with a built-in protection circuit.
- - You can directly solder the battery to the large BAT pad(just below the oled connector). If opting for the connector, you may need to use longer spacers to accommodate them below the pcb.
- - Only an encoder or an oled can be used due to limited space.
+ - You can directly solder the battery to the large BAT pad (just below the oled connector). If opting for the connector, you'll have to use longer spacers to accommodate them below the pcb.
  - You can solder the power switch on either side of the pcb but I have tested it only on the back side.
- - **Shared below are the steps to build the LEFT HALF. Since the pcb is reversible, you can just repeat these but on the opposite side to make a right half.**
+ - **This guide assumes you are capable of soldering the diodes, hotswap sockets, power button, encoder and mcu sockets yourself. You can find videos/guides about these stuff very easily. I have only shared some of the extra things you need to take care of.**
+
+**_Shared below are the steps to build the LEFT HALF. Since the pcb is reversible, you can just repeat these but on the opposite side to make a right half._**
 
 ### PCB Layout
 **Back / Left Side of PCB**
@@ -30,18 +30,14 @@ Note:
 
 ![Right](/rev2/docs/images/pcbr.png)
 
-***
-
-> **Warning**
-> This guide assumes you are capable of soldering the diodes, hotswap sockets, power button, encoder and mcu sockets yourself. You can find videos/guides about these stuff very easily. I have only shared some of the extra things you need to take care of.
 
 ***
 
 ### Preparing the controller
 
 We have to solder 3 diode legs to the 3 pads at the back of the xiao. The pads being *BAT+* and the two *NFC* pads at the corner. The other battery pad is ignored as it is internally connected to *GND* pin.
-> **Note**
-> You can skip soldering both NFC pads if you are building a 5 column corne with encoders, since one of the pad is used for 6th col and one for CS pin of nice!view oled. These pins have been marked as "6" and "CS" on the PCB for reference.
+
+> You can skip soldering either/both NFC pads depending on how you are building, since one of the pad is used for 6th col and one for the CS pin of nice!view. These pins have been marked as "6" and "CS" on the PCB for reference.
 
 - **Tin the pads**
 
@@ -49,9 +45,12 @@ We have to solder 3 diode legs to the 3 pads at the back of the xiao. The pads b
 
 - **Solder the diode legs**
 
+  You can use wires instead of diode legs. Check under [here](https://github.com/friction07/corne-xiao/blob/main/rev1/docs/buildguide.md#pads-at-the-back).
+
 ![solder the legs](/rev1/docs/images/mcu2.jpg)
 
-> **Warning**
+ **Warning**
+
 > Use low temperature for this (I used 260 C). Hold the legs with help of tweezers. Flux will help a lot. Try to make the legs straight which shouldn't be difficult as they are easy to bend. **Do not overheat or use excess force or you may end up lifting the pads**.
 I soldered multiple xiao like this. It looks scary at first but it just needs patience.
 
