@@ -14,6 +14,8 @@
 
 The pcb has the same dimensions and mounting points of the corne-cherry by foostan. So it will work with all the corne cases with the following constraint : **Since the controller is mounted facing up and is different from pro micro, make sure the case has clearance for the usb port**.
 
+_Corne v4 plates/cases will not fit as it has different spacing from the previous versions._
+
 ***
 
 ### Build Guide
