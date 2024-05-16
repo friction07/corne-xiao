@@ -6,7 +6,7 @@
 
 ### Pcb 
 
-[Here](/rev2/PCB/) you can find the Gerbers for the corne-xiao. 
+[Here](/rev2/PCB) you can find the Gerbers for the corne-xiao. 
 
 ***
 
@@ -15,6 +15,8 @@
 The pcb has the same dimensions and mounting points of the corne-cherry by foostan. So it will work with all the corne cases with the following constraint : **Since the controller is mounted facing up and is different from pro micro, make sure the case has clearance for the usb port**.
 
 _Corne v4 plates/cases will not fit as it has different spacing from the previous versions._
+
+I have also shared files for a case that I personally use [here](/case).
 
 ***
 
@@ -26,7 +28,7 @@ While the build process is similar to most of the keyboards, you can refer to th
 
 ### Firmware
 
-Firmware for both [5-col](/rev2/firmware/5-col/) and [6-col](/rev2/firmware/6-col/) has been shared which supports encoders on both half by default. 
+Firmware for both [5-col](/rev2/firmware/5-col) and [6-col](/rev2/firmware/6-col) has been shared which supports encoders on both half by default. 
 If you are going for nice!view instead of encoder, you can find the firmware [here](https://github.com/sidx64/corne-zmk-enc-nview), courtesy of [sidx64](https://github.com/sidx64).
 
 The uf2 folder contains ready to flash files for each half with an additional settings-reset file that might come in help if you are facing issues with bluetooth.
