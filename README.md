@@ -7,16 +7,17 @@ This is a modified version of the corne keyboard by foostan. It is wireless and 
 - supports rotary encoder on each half
 - supports nice!view
 - has a power button and JST header for the battery
+- pcb has teardrops
 
 *You can place either an oled or an encoder due to limited space*
 
 ***
 
-### rev1 
-Non reversible pcb based on corne v3. 
-
 ### rev2
-Reversible and breakable(5/6 column) pcb based on corne v2.
+Reversible and breakable(5/6 column) pcb based on corne v2 (north facing).
+
+### rev1 
+Non reversible pcb based on corne v3 (south facing). 
 
 ***
 
