@@ -513,7 +513,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "gerber/",
+      "plot": "gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "mx-corne-xiao.step",
