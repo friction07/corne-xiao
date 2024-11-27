@@ -3,7 +3,7 @@
 ![corne-xiao](/rev1/docs/images/corne-xiao.jpg)
 
 This is a modified version of the corne keyboard by foostan. It is wireless and uses zmk firmware.
-- uses Seeed Studio XIAO nRF52840 
+- uses [Seeed Studio XIAO nRF52840](https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html) 
 - supports rotary encoder on each half
 - supports nice!view
 - has a power button and JST header for the battery
